@@ -1,7 +1,11 @@
-# network-graph-whatsapp
-Um notebook python para processar conversas de whatsapp e plotar um gráfico de conexão entre as palavras
 
-https://github.com/user-attachments/assets/bb5c83c5-d434-43a8-a96a-2e39b0485180
+
+
+# network-graph-whatsapp
+Um notebook python para processar conversas de whatsapp criando um dicionário normalizador de palavras e plotar um gráfico de conexão entre as palavras
+
+https://github.com/user-attachments/assets/b4f9e4c9-3e21-4597-9d67-13b66952b733
+
 
 # Análise de Rede do WhatsApp
 
@@ -172,10 +176,11 @@ node_size = 700  # Ajuste conforme necessário
 
 O notebook utiliza `pyvis` para criar visualizações interativas da rede de mensagens, permitindo uma análise mais profunda das interações entre os usuários.
 
-https://github.com/user-attachments/assets/bb5c83c5-d434-43a8-a96a-2e39b0485180
+https://github.com/user-attachments/assets/b4f9e4c9-3e21-4597-9d67-13b66952b733
+
 
 ## Conclusão
 
-Este notebook fornece uma base para a análise de redes de mensagens do WhatsApp. Você pode expandir a análise adicionando mais funcionalidades e visualizações conforme necessário.
+Este notebook fornece uma base para a análise de redes de mensagens do WhatsApp. Você pode expandir a análise adicionando mais funcionalidades e visualizações conforme necessário. Além disso permite a criação de um Dicionário para normalizar palavras.
 
 
