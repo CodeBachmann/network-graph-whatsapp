@@ -2,7 +2,7 @@
 
 
 # network-graph-whatsapp
-Um notebook python para processar conversas de whatsapp criando um dicionário normalizador de palavras e plotar um gráfico de conexão entre as palavras
+Um notebook python para processar conversas de whatsapp crir um dicionário normalizador de palavras e plotar um gráfico de conexão entre as palavras
 
 https://github.com/user-attachments/assets/b4f9e4c9-3e21-4597-9d67-13b66952b733
 
