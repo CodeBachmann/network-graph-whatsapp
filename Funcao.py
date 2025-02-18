@@ -132,42 +132,6 @@ def montar_query_ler_conversa(protocolo):
     query = f"select remetente, mensagem from mirante.HI_conversas where protocolo = '{protocolo}' order by indiceConversa"
     return query
 
-def montar_query_view_where(dataInicio, dataFim, coluna, table):
-
-    query = f"SELECT {coluna} FROM {table} where dataInicio > '{dataInicio}' and dataFim < '{dataFim}'"
-    return query
-
-def query_preguicosa_view_where(id_post):
-    query = f"select shares, impressions, plays, video_views, reach, comments, navigation, likes, saved, total_interactions, profile_activity from IG_posts where idpostsInsta = '{id_post}'"
-    return query
-
-def montar_query_view_where_unitario(dic, table, now, where, comparativo):
-    column = ''
-    for i in dic:
-        column += f"{i}, "
-    column = column[:-2]
-    if now == "sim":
-        column += ", data_criada" 
-    query = f"""Select {column} from {table} where {where} = {comparativo};"""
-    return query
-
-
-
-def convert_webp_to_jpg(input_file, output_file):
-    try:
-        # Open the WebP image
-        with Image.open(input_file) as img:
-            # Convert to RGB mode if the image is in CMYK mode
-            if img.mode == 'CMYK':
-                img = img.convert('RGB')
-            
-            # Save as JPG
-            img.save(output_file, 'JPEG')
-            
-        print('Conversion successful!')
-        
-    except IOError:
-        print(f'Unable to open {input_file}')
 
 def limpa_requisicao_banco(response):
     lista_temp = []
@@ -199,12 +163,6 @@ def limpa_requisicao_banco_dic(response):
 
     }
     return dic_temp
-
-def pega_token_dinamize():
-    xlsx = pd.read_excel("C:\\Users\\User\\Desktop\\Mirante_Automatiza\\Mirante\\Dinamize\\rf_token.xlsx")
-    df = pd.DataFrame(xlsx)
-    access_token = str(df.at[0,"Rf_token"])
-    return access_token
 
 def tempo_de_fila(telA, dataI, df_compara):
 
@@ -468,8 +426,6 @@ def correct_text(text):
 
 
 def corrigir_abreviacoes(texto):
-    # Criar um padrão de regex para encontrar as abreviações
-
     abreviacoes = {
     "vc": "voce",
     "vcs" "voces"
